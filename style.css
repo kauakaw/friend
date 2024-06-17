@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+25+Charted&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+/*Inicio do menu*/
+
+.textmenu2{
+    padding: 0;
+    height: 85px;
+    text-align: center;
+    font-family: century gothic;
+    font-size: 25px;
+}
+.textmenu2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.textmenu4{
+    padding: 0;
+    height: 85px;
+    text-align: right;
+    font-family: century gothic;
+    font-size: 25px;
+}
+
+.textmenu4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.image{
+    background-color: transparent;
+}
+
+.image .img{
+    width: 150px;
+}
+
+
+
+/*Fim do menu*/
+
+/*Inicio da pag incial*/
+
+main{
+    background-color: #3c3c3c;
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+main .faixa{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 82%;
+}
+
+main .img1{
+    position: absolute;
+    right: 0;
+    top: 1%;
+    width: 18%;
+}
+
+main .kaique{
+    position: absolute;
+    right: 247px;
+    top: 19%;
+    width: 20%;
+}
+
+main .joao{
+    position: absolute;
+    right: 500px;
+    top: 39%;
+    width: 20%;
+}
+
+main .giovanni{
+    position: absolute;
+    right: 782px;
+    top: 59%;
+    width: 20%;
+}
+
+main .texto{
+    position: absolute;
+    border-radius: 15px;
+    background-color: white;
+    font-family: Jaro;
+    font-size: 3em;
+    top: 11%;
+    left: 65%;
+    height: 8%;
+    width: 13%;
+    text-align: center;
+}
+
+.texto{
+    transition: all .5s;
+    border: 3px solid transparent;
+}
+
+.texto:hover{
+    border: 10px solid black;
+    font-size: 2em;
+}
+
+main .texto2{
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Jaro;
+    font-size: 3em;
+    top: 30%;
+    left: 45%;
+    height: 8%;
+    width: 15%;
+    text-align: center;
+}
+
+.texto2{
+    transition: all .5s;
+    border: 3px solid transparent;
+}
+
+.texto2:hover{
+    border: 10px solid black;
+    font-size: 2em;
+}
+
+.texto2 a{
+    color: black;
+    text-decoration: none;
+}
+
+main .texto3{
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Jaro;
+    font-size: 3em;
+    top: 50%;
+    left: 30%;
+    height: 8%;
+    width: 13%;
+    text-align: center;
+}
+
+.texto3{
+    transition: all .5s;
+    border: 3px solid transparent;
+}
+
+.texto3:hover{
+    border: 10px solid black;
+    font-size: 2em;
+}
+
+main .texto4{
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Jaro;
+    font-size: 3em;
+    top: 70%;
+    left: 5%;
+    height: 8%;
+    width: 20%;
+    text-align: center;
+}
+
+.texto4{
+    transition: all .5s;
+    border: 3px solid transparent;
+}
+
+.texto4:hover{
+    border: 10px solid black;
+    font-size: 2em;
+}
+
+/*Fim da pag inicial*/
+
+main .regua{
+    position: absolute;
+    top: 9%;
+    left: 32%;
+}
+
+main .kaw{
+    position: absolute;
+    top: 46%;
+    height: 30%;
+    left: 52%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.kaw:hover{
+    -webkit-transform: scale(2.15);
+    transform: scale(2.15);
+}
+
+/*Inicio do carrossel*/
+
+.slider{
+    margin: 0 auto;
+    width: 960px;
+    height: 720capx;
+    overflow: hidden;
+}
+
+.slides{
+    width: 960px;
+    height: 720px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    position: relative;
+    transition: 2s;
+}
+
+.manual-navegation{
+    position: absolute;
+    width: 1024px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -960px;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -1920px;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -2880px;
+}
+
+.navegation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegation-auto{
+    position: absolute;
+    width: 1024px;
+    margin-top: 680px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navegation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navegation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navegation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+/*Fim do carrossel*/
+
+.textmenu3{
+    background-color: #3c3c3c;
+    padding: 0;
+    height: 85px;
+    text-align: center;
+    font-family: century gothic;
+    font-size: 30px;
+    margin: 0 auto;
+    color: white;
+    width: 100%;
+}
+
+.textmenu5{
+    background-color: white;
+    height: 85px;
+    text-align: center;
+    font-family: century gothic;
+    font-size: 30px;
+    color: black;
+    width: 100%;
+}
