@@ -116,6 +116,11 @@ main .texto{
     border: 3px solid transparent;
 }
 
+.texto{
+    transition: all .5s;
+    border: 3px solid transparent;
+}
+
 .texto:hover{
     border: 10px solid black;
     font-size: 2em;
@@ -167,6 +172,11 @@ main .texto3{
     border: 3px solid transparent;
 }
 
+.texto3{
+    transition: all .5s;
+    border: 3px solid transparent;
+}
+
 .texto3:hover{
     border: 10px solid black;
     font-size: 2em;
@@ -183,6 +193,11 @@ main .texto4{
     height: 8%;
     width: 20%;
     text-align: center;
+}
+
+.texto4{
+    transition: all .5s;
+    border: 3px solid transparent;
 }
 
 .texto4{
